@@ -28,7 +28,14 @@ namespace PracticaSlider
 
         private void sldPorcentaje_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            lbPorcntaje.Text = sldPorcentaje.Value.ToString();
+            lbPorcntaje.Text = ((int)sldPorcentaje.Value).ToString()+"%";
+            float cuenta= float.Parse(txtCuenta.Text);
+
+            float motoPropina= (int)(sldPorcentaje.Value)/100.0f*cuenta;
+
+            float totalPagar= cuenta+motoPropina;
+
+            Totalconpropina.Text= "$"+totalPagar.ToString();
         }
     }
 }

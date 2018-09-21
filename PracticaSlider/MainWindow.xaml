@@ -12,7 +12,7 @@
         <Slider ValueChanged="sldPorcentaje_ValueChanged" Name="sldPorcentaje" Margin="20,5,20,0" Maximum="25"></Slider>
         <TextBlock Name="lbPorcntaje" Margin="20,5,20,0"> 0% </TextBlock>
         <TextBlock  Text="Total con propina"> </TextBlock>
-        <TextBlock  Name="Totalconpropina"></TextBlock>
+        <TextBlock  Name="Totalconpropina" Margin="10,0"> </TextBlock>
 
 
 
